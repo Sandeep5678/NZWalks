@@ -1,4 +1,5 @@
 ﻿using NZWalks.API.Models.Domain;
+using System.Text.Json.Serialization;
 
 namespace NZWalks.API.Models.DTO
 {
@@ -13,6 +14,6 @@ namespace NZWalks.API.Models.DTO
         public long Population { get; set; }
 
         //Navigation Property
-        public IEnumerable<Walk> Walks { get; set; }
+        //public IEnumerable<Domain.Walk> Walks { get; set; }
     }
 }
