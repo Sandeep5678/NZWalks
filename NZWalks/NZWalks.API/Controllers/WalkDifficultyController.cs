@@ -44,10 +44,10 @@ namespace NZWalks.API.Controllers
         [HttpPost]
         public async Task<IActionResult> AddWalkDifficultyAsync(Models.DTO.AddWalkDifficultyRequest addWalkDifficulty)
         {
-            if (!ValidateAddWalkDifficultyAsync(addWalkDifficulty))
-            {
-                return BadRequest(ModelState);
-            }
+            //if (!ValidateAddWalkDifficultyAsync(addWalkDifficulty))
+            //{
+            //    return BadRequest(ModelState);
+            //}
 
             var walkDifficulty = new Models.Domain.WalkDifficulty
             {
